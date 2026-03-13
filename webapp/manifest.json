@@ -83,8 +83,8 @@
       ],
       "targets": {
         "TargetHome": {
-          "id": "Home",
-          "name": "Home"
+          "id": "Emptable",
+          "name": "Emptable"
         }
       }
     },

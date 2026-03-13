@@ -1,0 +1,111 @@
+<mvc:View controllerName="com.applexus.task.controller.Emptable"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:t="sap.ui.table" 
+    xmlns:c="sap.ui.core">
+    <Page id="page1" title="{i18n>title}">
+
+    <t:Table alternateRowColors="true"
+             rows="{fiMo>/empTab}"
+             selectionMode="Single">
+        <t:columns>
+
+            <t:Column >
+            <t:label>
+            <Label text="Employee ID"/>
+            </t:label>
+            <t:template>
+            <Text text="{fiMo>empId}"/>
+            </t:template>
+            </t:Column>
+
+            <t:Column >
+            <t:label>
+            <Label text="Employee Name"/>
+            </t:label>
+            <t:template>
+            <Input value="{fiMo>empName}"/>
+            </t:template>
+            </t:Column>
+
+            <t:Column >
+            <t:label>
+            <Label text="Date of Joining"/>
+            </t:label>
+            <t:template>
+            <DatePicker
+					value="{
+						'path':'{fiMo>doj}',
+						'type':'sap.ui.model.type.Date',
+						'formatOptions': {
+							'pattern': 'dd-MM-yyyy'
+						}
+					}"
+					change="handleChange"
+					class="sapUiSmallMarginBottom"/>
+            </t:template>
+            </t:Column>
+
+            <t:Column >
+            <t:label>
+            <Label text="Salary"/>
+            </t:label>
+            <t:template>
+            <Text text="{fiMo>salary}  {fiMo>currency}" />
+            </t:template>
+            </t:Column>
+
+            <t:Column >
+            <t:label>
+            <Label text="Gender"/>
+            </t:label>
+            <t:template>
+            <Image src="{fiMo>gender}" width="20px"/>
+            </t:template>
+            </t:Column>
+
+            <t:Column >
+            <t:label>
+            <Label text="Education"/>
+            </t:label>
+            <t:template>
+            <Select selectedKey="{fiMo>education}" >
+				<c:Item key="UG" text="UG" />
+                <c:Item key="PG" text="PG" />
+            </Select>
+            </t:template>
+            </t:Column>
+
+            <t:Column >
+            <t:label>
+            <Label text="Marital Status"/>
+            </t:label>
+            <t:template>
+            <Image src="{fiMo>mStatus}" width="20px"/>
+            </t:template>
+            </t:Column>
+
+            <t:Column >
+            <t:label>
+            <Label text="Smoker"/>
+            </t:label>
+            <t:template>
+            <CheckBox text="Yes" selected="{fiMo>smoker}" />
+            </t:template>
+            </t:Column>
+
+            <t:Column >
+            <t:label>
+            <Label text="Rating"/>
+            </t:label>
+            <t:template>
+            <RatingIndicator value="{fiMo>rating}" 
+                             iconSize="20px" />
+            </t:template>
+            </t:Column>
+            
+        </t:columns>
+    </t:Table>
+
+    </Page>
+</mvc:View>

@@ -1,0 +1,124 @@
+{
+    "empTab": [
+    {
+        "empName": "Adil",
+        "empId": "26160",
+        "doj" :"20220220",
+        "salary": "2300",
+        "currency": "USD",
+        "gender": "https://www.flaticon.com/free-icon/man_4605368",
+        "education":"UG",
+        "mStatus": "https://www.flaticon.com/free-icon/man_3882559",
+        "smoker": false,
+        "rating": "3"
+    },
+    {
+        "empName": "Joel",
+        "empId": "26161",
+        "doj" :"01122025",
+        "salary": "3000",
+        "currency": "USD",
+        "gender": "https://www.flaticon.com/free-icon/man_4605368",
+        "education":"PG",
+        "mStatus": "https://www.flaticon.com/free-icon/man_3882559",
+        "smoker": false,
+        "rating": "4"
+    },
+    {
+        "empName": "Jose",
+        "empId": "26162",
+        "doj" :"20220220",
+        "salary": "2000",
+        "currency": "USD",
+        "gender": "https://www.flaticon.com/free-icon/man_4605368",
+        "education":"UG",
+        "mStatus":"https://www.flaticon.com/free-icon/newlyweds_513907",
+        "smoker": false,
+        "rating": "3.5"
+    },
+    {
+        "empName": "Jyothis",
+        "empId": "26163",
+        "doj" :"20220220",
+        "salary": "2500",
+        "currency": "USD",
+        "gender": "https://www.flaticon.com/free-icon/man_4605368",
+        "education":"UG",
+        "mStatus": "https://www.flaticon.com/free-icon/man_3882559",
+        "smoker": true,
+        "rating": "4"
+    },
+    {
+        "empName": "Vijayalekshmi",
+        "empId": "26164",
+        "doj" :"20220220",
+        "salary": "3000",
+        "currency": "USD",
+        "gender": "https://www.flaticon.com/free-icon/woman_4605355",
+        "education":"PG",
+        "mStatus": "https://www.flaticon.com/free-icon/newlyweds_513907",
+        "smoker": false,
+        "rating": "4.5"
+    },
+    {
+        "empName": "Shruti",
+        "empId": "26165",
+        "doj" :"20220220",
+        "salary": "2800",
+        "currency": "USD",
+        "gender": "https://www.flaticon.com/free-icon/woman_4605355",
+        "education":"UG",
+        "mStatus": "https://www.flaticon.com/free-icon/newlyweds_513907",
+        "smoker": false,
+        "rating": "4"
+    },
+    {
+        "empName": "Nithin",
+        "empId": "26166",
+        "doj" :"20220220",
+        "salary": "2500",
+        "currency": "USD",
+        "gender": "https://www.flaticon.com/free-icon/man_4605368",
+        "education":"PG",
+        "mStatus": "https://www.flaticon.com/free-icon/man_3882559",
+        "smoker": true,
+        "rating": "3"
+    },
+    {
+        "empName": "Hashir",
+        "empId": "26167",
+        "doj" :"20220220",
+        "salary": "2600",
+        "currency": "USD",
+        "gender": "https://www.flaticon.com/free-icon/man_4605368",
+        "education":"UG",
+        "mStatus": "https://www.flaticon.com/free-icon/newlyweds_513907",
+        "smoker": true,
+        "rating": "4"
+    },
+    {
+        "empName": "Oliviya",
+        "empId": "26168",
+        "doj" :"20220220",
+        "salary": "2400",
+        "currency": "USD",
+        "gender": "https://www.flaticon.com/free-icon/woman_4605355",
+        "education":"UG",
+        "mStatus": "https://www.flaticon.com/free-icon/man_3882559",
+        "smoker": true,
+        "rating": "4"
+    },
+    {
+        "empName": "Yaswanth",
+        "empId": "26169",
+        "doj" :"20220220",
+        "salary": "3500",
+        "currency": "USD",
+        "gender": "https://www.flaticon.com/free-icon/man_4605368",
+        "education":"PG",
+        "mStatus": "https://www.flaticon.com/free-icon/newlyweds_513907",
+        "smoker": false,
+        "rating": "5"
+    }
+]
+}
