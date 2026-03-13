@@ -1,0 +1,21 @@
+<mvc:View controllerName="com.applexus.task.controller.Home"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form">
+    <Page id="page" title="{i18n>title}">
+    <f:SimpleForm >
+        <f:content>
+            <Label text="Employee ID"/>
+            <Input id='in1' width="200px" value = "{test>/empStr/empId}"/>
+            <Label text="Employee Name"/>
+            <Input id="in2" width="200px" value = "{test>/empStr/empName}"/>
+            <Label text="Employee Salary"/>
+            <Input id="in3" width="200px" value = "{test>/empStr/empSal}"/>
+            <Label text="Currency Code"/>
+            <Input id="in4" width="200px" value = "{test>/empStr/Currency}"/>
+            <Label text=""/>
+            <ToggleButton id ='b1' press="onPress" text="Get Values" width="100px"/>
+        </f:content>
+    </f:SimpleForm>
+    </Page>
+</mvc:View>
