@@ -13,7 +13,10 @@ sap.ui.define([
             var _rContext = oEvent.getParameter("rowContext");
             var _sPath = _rContext.getPath();
             var _sF = this.getView().byId('f1');
-            _sF.bindElement(_sPath);
+            _sF.bindElement({
+                path: _sPath,
+                model: "fiMo"
+            });
         }
     });
 });

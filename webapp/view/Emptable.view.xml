@@ -8,7 +8,7 @@
     <f:SimpleForm id='f1'>
         <f:content>
             <Label text="Employee ID"/>
-            <Input width="200px" value = "{fiMo>empID}"/>
+            <Input width="200px" value = "{fiMo>empId}"/>
             <Label text="Employee Name"/>
             <Input width="200px" value = "{fiMo>empName}"/>
             <Label text="Employee Salary"/>
@@ -22,7 +22,7 @@
              rowSelectionChange="onSelect">
         <t:columns>
 
-            <t:Column >
+            <t:Column width="100px">
             <t:label>
             <Label text="Employee ID"/>
             </t:label>
@@ -31,7 +31,7 @@
             </t:template>
             </t:Column>
 
-            <t:Column >
+            <t:Column width="130px">
             <t:label>
             <Label text="Employee Name"/>
             </t:label>
@@ -46,19 +46,14 @@
             </t:label>
             <t:template>
             <DatePicker
-					value="{
-						'path':'{fiMo>doj}',
-						'type':'sap.ui.model.type.Date',
-						'formatOptions': {
-							'pattern': 'dd-MM-yyyy'
-						}
-					}"
-					change="handleChange"
-					class="sapUiSmallMarginBottom"/>
+				value="{fiMo>doj}"
+                displayFormat="dd-MM-yyyy"
+				change="handleChange"
+				class="sapUiSmallMarginBottom"/>
             </t:template>
             </t:Column>
 
-            <t:Column >
+            <t:Column width="100px">
             <t:label>
             <Label text="Salary"/>
             </t:label>
@@ -66,13 +61,27 @@
             <Text text="{fiMo>salary}  {fiMo>currency}" />
             </t:template>
             </t:Column>
+            
+            <t:Column width="100px">
+            <t:label>
+            <Label text="Shift"/>
+            </t:label>
+            <t:template>
+            <SegmentedButton selectedKey="{fiMo>shift}">
+            <items>
+            <SegmentedButtonItem key="mor" icon="sap-icon://light-mode" />
+            <SegmentedButtonItem key="eve" icon="sap-icon://dark-mode" />
+            </items>
+            </SegmentedButton>
+            </t:template>
+            </t:Column>
 
-            <t:Column >
+            <t:Column width="75px">
             <t:label>
             <Label text="Gender"/>
             </t:label>
             <t:template>
-            <Image src="{fiMo>gender}" width="20px"/>
+            <Image src="{fiMo>gender}" width="30px"/>
             </t:template>
             </t:Column>
 
@@ -88,12 +97,12 @@
             </t:template>
             </t:Column>
 
-            <t:Column >
+            <t:Column width="120px">
             <t:label>
             <Label text="Marital Status"/>
             </t:label>
             <t:template>
-            <Image src="{fiMo>mStatus}" width="20px"/>
+            <Image src="{fiMo>mStatus}" width="30px"/>
             </t:template>
             </t:Column>
 
