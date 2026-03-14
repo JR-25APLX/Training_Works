@@ -1,13 +1,25 @@
-<mvc:View controllerName="com.applexus.task.controller.Emptable"
+<mvc:View xmlns:form="sap.ui.layout.form" controllerName="com.applexus.task.controller.Emptable"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m"
     xmlns:t="sap.ui.table" 
-    xmlns:c="sap.ui.core">
+    xmlns:c="sap.ui.core"
+    xmlns:f="sap.ui.layout.form">
     <Page id="page1" title="{i18n>title}">
+    <f:SimpleForm id='f1'>
+        <f:content>
+            <Label text="Employee ID"/>
+            <Input width="200px" value = "{fiMo>empID}"/>
+            <Label text="Employee Name"/>
+            <Input width="200px" value = "{fiMo>empName}"/>
+            <Label text="Employee Salary"/>
+            <Input width="200px" value = "{fiMo>salary}"/>
+        </f:content>
+    </f:SimpleForm>
 
     <t:Table alternateRowColors="true"
              rows="{fiMo>/empTab}"
-             selectionMode="Single">
+             selectionMode="Single"
+             rowSelectionChange="onSelect">
         <t:columns>
 
             <t:Column >
