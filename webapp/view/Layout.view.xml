@@ -1,0 +1,308 @@
+<mvc:View controllerName="com.applexus.task.controller.Layout"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:m="sap.m"
+    xmlns="sap.uxap"
+    xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form">
+    <m:Page id="page2" title="{i18n>title}">
+        <ObjectPageLayout id="ObjectPageLayout"
+		                  enableLazyLoading="true"
+		                  beforeNavigate="onBeforeNavigate"
+		                  useIconTabBar="true"
+		                  showTitleInHeaderContent="true"
+		                  upperCaseAnchorBar="false">
+            <headerTitle>
+			<ObjectPageDynamicHeaderTitle>
+				<expandedHeading>
+					<m:Title text="JOEL REJI" 
+                             wrapping="true"/>
+				</expandedHeading>
+
+				<snappedHeading>
+					<m:FlexBox fitContainer="true" 
+                               alignItems="Center">
+						<m:Avatar src="../images/image.jpg" 
+                                  displaySize="L"
+                                  class="sapUiTinyMarginEnd"/>
+						<m:Title text="JOEL REJI" 
+                                 wrapping="true" />
+					</m:FlexBox>
+				</snappedHeading>
+
+				<expandedContent>
+					<m:Text text="Trainee Consultant"/>
+				</expandedContent>
+
+				<snappedContent>
+					<m:Text text="Trainee Consultant"/>
+				</snappedContent>
+
+				<snappedTitleOnMobile>
+					<m:Title text="Trainee Consultant"/>
+				</snappedTitleOnMobile>
+
+				<actions>
+					<m:Button text="Edit" 
+                              type="Emphasized" 
+                              press="onEdit"/>
+					<m:OverflowToolbarButton icon="sap-icon://action" 
+                                             type="Transparent" 
+                                             text="Share" 
+                                             tooltip="action"/>
+				</actions>
+			</ObjectPageDynamicHeaderTitle>
+		</headerTitle>
+		<headerContent>
+			<m:FlexBox wrap="Wrap" 
+					   fitContainer="true" >
+				<m:Avatar class="sapUiSmallMarginEnd" 
+						  src="../images/image.jpg" 
+						  displaySize="M" />
+
+				<l:VerticalLayout class="sapUiSmallMarginBeginEnd">
+					<m:Link text="+91 9645621864" />
+					<m:Link text="joelreji@gmail.com"/>
+				</l:VerticalLayout>
+
+				<l:HorizontalLayout class="sapUiSmallMarginBeginEnd">
+					<m:VBox>
+					<m:Image src="../images/linkedin.png"
+					         width="20px"
+							 height="20px"
+							 class="sapUiSmallMarginBegin"/>
+					<m:Image src="../images/twitter.png" 
+							 width="20px"
+							 height="20px"
+					         class="sapUiSmallMarginBegin"/>
+					</m:VBox>
+			    </l:HorizontalLayout>
+				<l:VerticalLayout class="sapUiSmallMarginBeginEnd">
+					<m:Text text="Kazhakoottam, Thiruvananthapuram"/>
+				</l:VerticalLayout>
+				<l:VerticalLayout class="sapUiSmallMarginBeginEnd">
+    				<m:Text text="Department: SAP ABAP"/>
+    				<m:Text text="Experience: 6 Months"/>
+    				<m:Text text="Status: Active"/>
+				</l:VerticalLayout>
+			</m:FlexBox>
+		</headerContent>
+		<sections>
+			<ObjectPageSection id="PD" 
+                   			   title="Personal Details"
+                               titleUppercase="false">
+    			<subSections>
+        			<ObjectPageSubSection id="PDS1" 
+                                          title="Connect"
+                                          titleUppercase="false">
+            			<blocks>
+                			<m:HBox width="100%">
+                    		<m:VBox width="25%">
+                        	<f:SimpleForm editable="false"
+                                      	  title="Addresses"
+                                          layout="ResponsiveGridLayout">
+                            	<m:Label text="Home Address"/>
+                            	<m:VBox>
+                                	<m:Text text="Melevila Veedu"/>
+                                	<m:Text text="Kalayapuram, Kottarakkara"/>
+                                	<m:Text text="PIN: 691560"/>
+                            	</m:VBox>
+                            	<m:Label text="Office Address"/>
+                            	<m:VBox>
+                                	<m:Text text="Applexus Technologies"/>
+                                	<m:Text text="10, Yamuna Building"/>
+                                	<m:Text text="Technopark Phase 3, Kulathur"/>
+                            	</m:VBox>
+                       	    </f:SimpleForm>
+                    		</m:VBox>
+                    		<m:VBox width="25%">
+                        		<f:SimpleForm editable="false"
+                                      		  title="Phone Numbers"
+                                              layout="ResponsiveGridLayout">
+                            		<m:Label text="Mobile"/>
+                            		<m:Text text="+91 9645621864"/>
+                            		<m:Label text="Office Phone"/>
+                            		<m:Text text="0471 271 0900"/>
+                        		</f:SimpleForm>
+                    		</m:VBox>
+                    		<m:VBox width="25%">
+                        		<f:SimpleForm editable="false"
+                                      		  title="Mailing Address"
+                                      		  layout="ResponsiveGridLayout">
+                            		<m:Label text="Work"/>
+                            		<m:Text text="joel.reji@applexus.com"/>
+                            		<m:Label text="Personal"/>
+                            		<m:Text text="joelreji@gmail.com"/>
+                        		</f:SimpleForm>
+                    		</m:VBox>
+                    		<m:VBox width="25%">
+                        		<f:SimpleForm editable="false"
+                                      		  title="Personal Info"
+                                      		  layout="ResponsiveGridLayout">
+                            		<m:Label text="Gender"/>
+                            		<m:Text text="Male"/>
+                            		<m:Label text="Marital Status"/>
+                            		<m:Text text="Single"/>
+                        		</f:SimpleForm>
+                    		</m:VBox>
+                			</m:HBox>
+            			</blocks>
+       			    </ObjectPageSubSection>
+        			<ObjectPageSubSection id="PDS2" 
+                              			  title="Social Accounts"
+                             			  titleUppercase="false">
+            			<blocks>
+                			<m:HBox width="100%">
+                    			<m:VBox width="50%">
+                        			<f:SimpleForm editable="false"
+                                      			  title="Social Accounts"
+                                      			  layout="ResponsiveGridLayout">
+                            			<m:Label text="LinkedIn"/>
+                            			<m:Text text="linkedin.com/in/joelreji"/>
+                            			<m:Label text="GitHub"/>
+                            			<m:Text text="github.com/joelreji"/>
+                        			</f:SimpleForm>
+                    			</m:VBox>
+                			</m:HBox>
+            			</blocks>
+            			<moreBlocks>
+                			<m:HBox width="100%">
+                    			<m:VBox width="50%">
+                        			<f:SimpleForm editable="false"
+                                      			  title=" "
+                                      			  layout="ResponsiveGridLayout">
+                            			<m:Label text="Twitter"/>
+                            			<m:Text text="@joelreji"/>
+                            			<m:Label text="Instagram"/>
+                            			<m:Text text="@joel.reji"/>
+                        			</f:SimpleForm>
+                    			</m:VBox>
+                			</m:HBox>
+            			</moreBlocks>
+        			</ObjectPageSubSection>
+   				</subSections>
+			</ObjectPageSection>
+
+			<ObjectPageSection id="ED" 
+                   			   title="Education"
+                   			   titleUppercase="false">
+    			<subSections>
+        			<ObjectPageSubSection id="EDS1" 
+                              			  title="UnderGraduation"
+                              			  titleUppercase="false">
+            			<blocks>
+                			<m:HBox width="100%">
+                    			<m:VBox width="50%">
+                        			<f:SimpleForm editable="false"
+                                                  title="Bachelor of Technology"
+                                                  layout="ResponsiveGridLayout">
+                            			<m:Label text="College"/>
+                            			<m:Text text="Baselios Mathews II College of Engineering"/>
+                            			<m:Label text="Department"/>
+                            			<m:Text text="Computer Science and Engineering"/>
+                            			<m:Label text="CGPA"/>
+                            			<m:Text text="7.82"/>
+                            			<m:Label text="Duration"/>
+                            			<m:Text text="Jul 2019 - May 2023"/>
+                        			</f:SimpleForm>
+                    			</m:VBox>
+                			</m:HBox>
+            			</blocks>
+       				</ObjectPageSubSection>
+        			<ObjectPageSubSection id="EDS2" 
+                              			  title="PostGraduation"
+                              		      titleUppercase="false">
+            			<blocks>
+                			<m:HBox width="100%">
+                    			<m:VBox width="50%">
+                        			<f:SimpleForm editable="false"
+                                      			  title="Master of Technology"
+                                      			  layout="ResponsiveGridLayout">
+                            			<m:Label text="College"/>
+                            			<m:Text text="TKM College of Engineering"/>
+                            			<m:Label text="Department"/>
+                            			<m:Text text="Computer Science and Engineering"/>
+                            			<m:Label text="CGPA"/>
+                            			<m:Text text="9.19"/>
+                            			<m:Label text="Duration"/>
+                            			<m:Text text="Sep 2023 - May 2025"/>
+                       				</f:SimpleForm>
+                    			</m:VBox>
+                			</m:HBox>
+            			</blocks>
+        			</ObjectPageSubSection>
+    			</subSections>
+			</ObjectPageSection>
+
+			<ObjectPageSection id="EMP" 
+                   			   title="Employment"
+                   			   titleUppercase="false">
+    			<subSections>
+        			<ObjectPageSubSection >
+            			<blocks>
+                			<m:HBox width="100%">
+                    			<m:VBox width="50%">
+                        			<f:SimpleForm editable="false"
+                                                  layout="ResponsiveGridLayout">
+										<m:Label text="Company"/>
+                            			<m:Text text="Applexus Technologies"/>
+                            			<m:Label text="Role"/>
+                            			<m:Text text="ABAP Consultant"/>
+                            			<m:Label text="Date of Joining"/>
+                            			<m:Text text="01 Dec 2025"/>
+                            			<m:Label text="Total Experience"/>
+                            			<m:Text text="4 Months"/>	
+									</f:SimpleForm>
+                    			</m:VBox>
+								<m:VBox width="50%">
+									<f:SimpleForm editable="false"
+                                                  layout="ResponsiveGridLayout">
+										<!-- <m:Label text="Company"/>
+                            			<m:Text text="Applexus Technologies"/> -->
+									</f:SimpleForm>
+								</m:VBox>
+                			</m:HBox>
+            			</blocks>	   
+        			</ObjectPageSubSection>
+				</subSections>
+			</ObjectPageSection>
+
+			<ObjectPageSection id="SKL" 
+                   			   title="Skills"
+                   			   titleUppercase="false">
+    			<subSections>
+        			<ObjectPageSubSection >
+            			<blocks>
+                			<m:HBox width="100%">
+                    			<m:VBox width="50%">
+                        			<f:SimpleForm editable="false"
+												  title="Technical Skills"
+                                                  layout="ResponsiveGridLayout">
+    									<m:FormattedText htmlText="&lt;ul&gt;
+        									&lt;li&gt;Data Dictionary&lt;/li&gt;
+       									    &lt;li&gt;ABAP Reports&lt;/li&gt;
+        									&lt;li&gt;CDS&lt;/li&gt;
+        									&lt;li&gt;OData&lt;/li&gt;
+        									&lt;li&gt;Fiori&lt;/li&gt;
+    									    &lt;/ul&gt;" />
+									</f:SimpleForm>
+                    			</m:VBox>
+								<m:VBox width="50%">
+									<f:SimpleForm editable="false"
+												  title="Soft Skills"
+                                                  layout="ResponsiveGridLayout">
+										<m:Text text="• Team Player"/>
+										<m:Text text="• Quick Learner"/>
+										<m:Text text="• Time Management"/>
+										<m:Text text="• Collaboration"/>
+									</f:SimpleForm>
+								</m:VBox>
+                			</m:HBox>
+            			</blocks>	   
+        			</ObjectPageSubSection>
+				</subSections>
+			</ObjectPageSection>
+
+        </sections>
+    </ObjectPageLayout>
+    </m:Page>
+</mvc:View>
